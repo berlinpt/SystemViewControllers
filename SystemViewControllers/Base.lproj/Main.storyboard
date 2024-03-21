@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SystemViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1789" translatesAutoresizingMaskIntoConstraints="NO" id="KVy-bQ-jfr">
+                                <rect key="frame" x="0.0" y="59" width="393" height="426"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqy-3w-MHC">
+                                <rect key="frame" x="0.0" y="493" width="393" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOF-57-fs5">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BYy-3h-unS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psN-nh-QNS">
+                                        <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Safari"/>
+                                        <connections>
+                                            <action selector="safariButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9F-Do-KyM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1e-js-Fd2">
+                                        <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Camera"/>
+                                        <connections>
+                                            <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKZ-nI-6po"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDa-0g-zib">
+                                        <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Email"/>
+                                        <connections>
+                                            <action selector="emailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KqO-Fd-SL3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KVy-bQ-jfr" secondAttribute="trailing" id="1R3-j1-GD1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vqy-3w-MHC" secondAttribute="bottom" constant="282" id="ChS-9e-sLL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vqy-3w-MHC" secondAttribute="trailing" id="Hvq-3f-Aso"/>
+                            <constraint firstItem="vqy-3w-MHC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iir-aS-rSD"/>
+                            <constraint firstItem="KVy-bQ-jfr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MZO-sZ-dBk"/>
+                            <constraint firstItem="vqy-3w-MHC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d0V-T7-3q8"/>
+                            <constraint firstItem="vqy-3w-MHC" firstAttribute="top" secondItem="KVy-bQ-jfr" secondAttribute="bottom" constant="8" id="d74-Cc-kBe"/>
+                            <constraint firstItem="KVy-bQ-jfr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="iag-6V-Lfg"/>
+                            <constraint firstItem="KVy-bQ-jfr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z7H-Na-ff4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="KVy-bQ-jfr" id="jYM-W4-wqz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_1789" width="3024" height="4032"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
